@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Sports Event Registration</title>
+    <style>
+        body {
+            background-image: url(sp.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+           
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #fff6f6;
+            border-radius: 10px;
+        }
+        label, select, input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h2>College Sports Event Registration</h2>
+    <form action="submit_registration.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="roll_number">Roll Number:</label>
+        <input type="text" id="roll_number" name="roll_number" required>
+       
+        <label for="year">Year:</label>
+        <select id="year" name="year" required>
+            <option value="1st">1st Year</option>
+            <option value="2nd">2nd Year</option>
+            <option value="3rd">3rd Year</option>
+            <option value="4th">4th Year</option>
+        </select>
+
+        <label for="branch">Branch:</label>
+        <input type="text" id="branch" name="branch" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="sport">Select Sport:</label>
+        <select id="sport" name="sport" required>
+            <option value="Kabaddi">Kabaddi</option>
+            <option value="Cricket">Cricket</option>
+            <option value="Kho-Kho">Kho-Kho</option>
+            <option value="Running">Running</option>
+            <option value="Volleyball">Volleyball</option>
+            <option value="Basketball">Basketball</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <input type="submit" value="Register" onclick="document.location='succ.html'">
+    </form>
+</body>
+</html>

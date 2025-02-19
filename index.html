@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Button Page</title>
+    <style>
+        body {
+            
+            font-family: Arial, sans-serif;
+            display: flex;
+            background-image:url("holymary.jpg");
+            background-repeat:no-repeat;
+            background-position:center;
+            background-attachment: fixed;
+            background-size: cover;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #d7d3d7;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        button {
+            width: 150px;
+            padding: 10px;
+            margin: 5px;
+            background: #3785d3;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #181db2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>HOLY MARY COLLEGE REGISTRATIONS</h2>
+        <button type="button" onclick="document.location='regis.html'">Registration for college elections</button>
+        <button type="button" onclick="document.location='place.html'">Placments registraion form</button>
+        <button type="button"onclick="document.location='sports.html'">Sports registrations</button>
+        <button type="button"onclick="document.location='idcard.html'">Id card registration forms</button>
+       
+    </div>
+</body>
+</html>

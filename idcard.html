@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Mary Engineering College - Registration</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        form { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; }
+        label { display: block; margin-top: 10px; font-weight: bold; }
+        input, select { width: 100%; padding: 8px; margin-top: 5px; }
+        button { margin-top: 15px; padding: 10px; background: #007bff; color: white; border: none; cursor: pointer; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Holy Mary Engineering College - Registration</h2>
+    <form id="registrationForm">
+        <label>Full Name:</label>
+        <input type="text" name="fullName" required>
+        
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" required>
+        
+        <label>Gender:</label>
+        <select name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        
+        <label>Blood Group:</label>
+        <input type="text" name="bloodGroup" required>
+        
+        <label>Aadhar Number:</label>
+        <input type="text" name="aadhar" required>
+        
+        <label>Mobile Number:</label>
+        <input type="tel" name="mobile" required>
+        
+        <label>Email ID:</label>
+        <input type="email" name="email" required>
+        
+        <label>Course & Branch:</label>
+        <input type="text" name="courseBranch" required>
+        
+        <label>Year & Semester:</label>
+        <input type="text" name="yearSemester" required>
+        
+        <label>Father’s Name:</label>
+        <input type="text" name="fatherName" required>
+        
+        <label>Mother’s Name:</label>
+        <input type="text" name="motherName" required>
+        
+        <label>Upload Photo:</label>
+        <input type="file" name="photo" required>
+        
+        <button type="button" onclick="document.location='succ.html'">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Registration submitted successfully!');
+        });
+    </script>
+</body>
+</html>
